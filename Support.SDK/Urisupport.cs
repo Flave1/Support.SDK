@@ -10,8 +10,7 @@ namespace Support.SDK
         public UriService(string baseUri)
         {
             _baseUri = baseUri;
-        }
-
+        } 
         public Uri ReturnCompanyBaseDomain(string clientPath)
         {
             return new Uri(_baseUri + clientPath);

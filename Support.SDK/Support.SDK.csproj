@@ -11,13 +11,14 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Uri.support.cs" />
-    <Compile Remove="Validationfilter.support.cs" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Abstractions" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="Uri.support.cs" />
-    <None Include="Validationfilter.support.cs" />
+    <Reference Include="GOSLibraries">
+      <HintPath>GOSLibraries.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>
