@@ -2,6 +2,22 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <RepositoryUrl>https://github.com/Flave1/Support.SDK.git</RepositoryUrl>
+    <Description>SDK is the acronym for “Software Development Kit”. The SDK brings together a group of tools that enable the programming of mobile applications. This set of tools can be divided into 3 categories: SDKs for programming or operating system environments (iOS, Android, etc.) Application maintenance SDKs</Description>
+    <Company>SDK</Company>
+    <Product>SDK</Product>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Uri.support.cs" />
+    <Compile Remove="Validationfilter.support.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Uri.support.cs" />
+    <None Include="Validationfilter.support.cs" />
+  </ItemGroup>
 
 </Project>
